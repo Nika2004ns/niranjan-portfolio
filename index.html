@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niranjan - Portfolio</title>
+    <meta name="description" content="Professional portfolio of Niranjan - Library Assistant & Web Developer">
+    <meta name="keywords" content="portfolio, web developer, WordPress, library assistant, Chennai">
+    <meta name="author" content="Niranjan">
+    <link rel="icon" href="logo.png" type="image/png">
+    <title>I.Niranjan  - Portfolio | Web Developer & Library Assistant</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #4361ee;
@@ -23,6 +27,10 @@
             --error-color: #ef233c;
             --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --library-brown: #5d4037;
+            --library-light: #d7ccc8;
+            --library-dark: #3e2723;
+            --parchment: #f5f5f1;
         }
 
         * {
@@ -33,11 +41,12 @@
         }
 
         body {
-            background-color: var(--light-gray);
+            background-color: var(--parchment);
             color: var(--text-color);
             line-height: 1.7;
             overflow-x: hidden;
             position: relative;
+            background-image: url('https://www.transparenttextures.com/patterns/paper.png');
         }
 
         .container {
@@ -50,6 +59,8 @@
             position: relative;
             overflow: hidden;
             z-index: 1;
+            border: 1px solid var(--library-light);
+            background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
         }
 
         .container::before {
@@ -59,7 +70,7 @@
             left: 0;
             width: 100%;
             height: 8px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            background: linear-gradient(90deg, var(--library-brown), var(--primary-color));
         }
 
         header {
@@ -77,8 +88,8 @@
             height: 200px;
             border-radius: 50%;
             padding: 8px;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            box-shadow: 0 8px 20px rgba(67, 97, 238, 0.3);
+            background: linear-gradient(135deg, var(--library-brown), var(--primary-color));
+            box-shadow: 0 8px 20px rgba(93, 64, 55, 0.3);
             animation: float 6s ease-in-out infinite;
             z-index: 1;
         }
@@ -91,7 +102,7 @@
             right: -5px;
             bottom: -5px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            background: linear-gradient(135deg, var(--library-brown), var(--primary-color));
             z-index: -1;
             opacity: 0.5;
             filter: blur(15px);
@@ -129,11 +140,11 @@
         }
 
         h1 {
-            font-size: 3rem;
-            color: var(--secondary-color);
+            font-size: 2.8rem;
+            color: var(--library-dark);
             margin-bottom: 5px;
             font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Playfair Display', serif;
             letter-spacing: -0.5px;
             position: relative;
             display: inline-block;
@@ -152,12 +163,15 @@
         }
 
         .tagline {
-            font-size: 1.5rem;
-            color: var(--primary-color);
+            font-size: 1.4rem;
+            color: var(--library-brown);
             margin-bottom: 15px;
             font-weight: 500;
             position: relative;
             display: inline-block;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            min-height: 42px;
         }
 
         .tagline::after {
@@ -167,13 +181,14 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, var(--primary-color), transparent);
+            background: linear-gradient(90deg, var(--library-brown), transparent);
         }
 
         .header-text p {
             color: var(--dark-gray);
             max-width: 600px;
             font-size: 1.05rem;
+            line-height: 1.8;
         }
 
         .contact-info {
@@ -196,6 +211,7 @@
             box-shadow: 0 3px 10px rgba(0,0,0,0.05);
             position: relative;
             overflow: hidden;
+            border: 1px solid var(--library-light);
         }
 
         .contact-item::before {
@@ -205,7 +221,7 @@
             left: 0;
             width: 5px;
             height: 100%;
-            background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+            background: linear-gradient(to bottom, var(--library-brown), var(--primary-color));
             transition: var(--transition);
         }
 
@@ -220,7 +236,7 @@
         }
 
         .contact-item i {
-            color: var(--primary-color);
+            color: var(--library-brown);
             font-size: 1.1rem;
             z-index: 1;
         }
@@ -265,10 +281,10 @@
         h2 {
             font-size: 2.2rem;
             margin-bottom: 30px;
-            color: var(--secondary-color);
+            color: var(--library-dark);
             position: relative;
             padding-bottom: 15px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Playfair Display', serif;
             display: flex;
             align-items: center;
         }
@@ -280,14 +296,14 @@
             left: 0;
             width: 70px;
             height: 4px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            background: linear-gradient(90deg, var(--library-brown), var(--accent-color));
             border-radius: 2px;
         }
 
         h2 i {
             margin-right: 15px;
             color: var(--accent-color);
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            background: linear-gradient(135deg, var(--library-brown), var(--accent-color));
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -310,7 +326,7 @@
             transition: var(--transition);
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(0,0,0,0.05);
+            border: 1px solid var(--library-light);
         }
 
         .skill-category::before {
@@ -320,7 +336,7 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            background: linear-gradient(90deg, var(--library-brown), var(--primary-color));
         }
 
         .skill-category:hover {
@@ -330,11 +346,12 @@
 
         .skill-category h3 {
             margin-bottom: 20px;
-            color: var(--primary-color);
+            color: var(--library-brown);
             font-size: 1.3rem;
             display: flex;
             align-items: center;
             gap: 10px;
+            font-family: 'Playfair Display', serif;
         }
 
         .skill-category h3 i {
@@ -351,7 +368,7 @@
             justify-content: space-between;
             font-weight: 600;
             margin-bottom: 8px;
-            color: var(--secondary-color);
+            color: var(--library-dark);
         }
 
         .skill-bar {
@@ -365,7 +382,7 @@
 
         .skill-progress {
             height: 100%;
-            background: linear-gradient(90deg, var(--primary-light), var(--primary-color));
+            background: linear-gradient(90deg, var(--library-light), var(--library-brown));
             border-radius: 5px;
             transition: width 1.2s ease-in-out;
             position: relative;
@@ -410,7 +427,7 @@
             transition: var(--transition);
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(0,0,0,0.05);
+            border: 1px solid var(--library-light);
         }
 
         .project::before {
@@ -420,7 +437,7 @@
             left: 0;
             width: 5px;
             height: 100%;
-            background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+            background: linear-gradient(to bottom, var(--library-brown), var(--primary-color));
             transition: var(--transition);
         }
 
@@ -443,11 +460,12 @@
 
         .project-title {
             font-weight: bold;
-            color: var(--secondary-color);
+            color: var(--library-dark);
             margin-bottom: 5px;
             font-size: 1.4rem;
             position: relative;
             display: inline-block;
+            font-family: 'Playfair Display', serif;
         }
 
         .project-title::after {
@@ -478,7 +496,7 @@
         }
 
         .project-client a {
-            color: var(--primary-color);
+            color: var(--library-brown);
             text-decoration: none;
             transition: var(--transition);
         }
@@ -490,13 +508,13 @@
 
         .project-duration {
             color: var(--white);
-            background: linear-gradient(45deg, var(--primary-color), var(--primary-light));
+            background: linear-gradient(45deg, var(--library-brown), var(--primary-light));
             padding: 5px 12px;
             border-radius: 20px;
             font-size: 0.85rem;
             display: inline-block;
             margin-bottom: 15px;
-            box-shadow: 0 3px 10px rgba(67, 97, 238, 0.2);
+            box-shadow: 0 3px 10px rgba(93, 64, 55, 0.2);
         }
 
         .project-images {
@@ -515,7 +533,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: var(--transition);
             position: relative;
-            border: 1px solid rgba(0,0,0,0.1);
+            border: 1px solid var(--library-light);
         }
 
         .project-image::before {
@@ -561,6 +579,7 @@
             position: relative;
             padding-left: 25px;
             color: var(--dark-gray);
+            line-height: 1.8;
         }
 
         .project li::before {
@@ -590,25 +609,25 @@
         }
 
         .project-link.live {
-            background-color: var(--primary-color);
+            background-color: var(--library-brown);
             color: white;
-            box-shadow: 0 3px 10px rgba(67, 97, 238, 0.3);
+            box-shadow: 0 3px 10px rgba(93, 64, 55, 0.3);
         }
 
         .project-link.live:hover {
-            background-color: var(--primary-light);
+            background-color: var(--library-dark);
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.4);
+            box-shadow: 0 5px 15px rgba(93, 64, 55, 0.4);
         }
 
         .project-link.code {
             background-color: var(--light-gray);
             color: var(--dark-gray);
-            border: 1px solid var(--medium-gray);
+            border: 1px solid var(--library-light);
         }
 
         .project-link.code:hover {
-            background-color: var(--medium-gray);
+            background-color: var(--library-brown);
             color: white;
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -630,7 +649,7 @@
             transition: var(--transition);
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(0,0,0,0.05);
+            border: 1px solid var(--library-light);
         }
 
         .education-item::before {
@@ -640,7 +659,7 @@
             left: 0;
             width: 5px;
             height: 100%;
-            background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+            background: linear-gradient(to bottom, var(--library-brown), var(--primary-color));
             transition: var(--transition);
         }
 
@@ -666,7 +685,7 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: var(--transition);
-            border: 1px solid rgba(0,0,0,0.1);
+            border: 1px solid var(--library-light);
         }
 
         .education-image:hover {
@@ -676,14 +695,15 @@
         
         .education-degree {
             font-weight: bold;
-            color: var(--secondary-color);
+            color: var(--library-dark);
             font-size: 1.3rem;
             margin-bottom: 5px;
+            font-family: 'Playfair Display', serif;
         }
         
         .education-institution {
             font-weight: 600;
-            color: var(--primary-color);
+            color: var(--library-brown);
             margin: 8px 0;
             display: flex;
             align-items: center;
@@ -721,6 +741,7 @@
             position: relative;
             padding-left: 25px;
             color: var(--dark-gray);
+            line-height: 1.8;
         }
         
         .education-details li::before {
@@ -739,6 +760,137 @@
         }
 
         .institution-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Experience Section */
+        .experience-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .experience-item {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            background-color: var(--light-gray);
+            padding: 30px;
+            border-radius: 12px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--library-light);
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--library-brown), var(--primary-color));
+            transition: var(--transition);
+        }
+
+        .experience-item:hover::before {
+            width: 8px;
+        }
+
+        .experience-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-content {
+            flex: 1;
+            min-width: 60%;
+        }
+
+        .experience-image {
+            flex: 1;
+            min-width: 35%;
+            margin-top: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            border: 1px solid var(--library-light);
+        }
+
+        .experience-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .experience-title {
+            font-weight: bold;
+            color: var(--library-dark);
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .experience-company {
+            font-weight: 600;
+            color: var(--library-brown);
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .experience-company i {
+            color: var(--accent-color);
+        }
+
+        .experience-period {
+            color: var(--medium-gray);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .experience-period i {
+            color: var(--warning-color);
+        }
+
+        .experience-details {
+            margin-top: 15px;
+        }
+
+        .experience-details ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .experience-details li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+            color: var(--dark-gray);
+            line-height: 1.8;
+        }
+
+        .experience-details li::before {
+            content: '▹';
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        .experience-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .experience-img:hover {
             transform: scale(1.05);
         }
         
@@ -762,6 +914,7 @@
             box-shadow: 0 3px 10px rgba(0,0,0,0.05);
             position: relative;
             overflow: hidden;
+            border: 1px solid var(--library-light);
         }
 
         .social-links a::before {
@@ -771,7 +924,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            background: linear-gradient(45deg, var(--library-brown), var(--primary-color));
             opacity: 0;
             transition: var(--transition);
             z-index: 0;
@@ -792,19 +945,6 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
-        .social-links a:nth-child(1):hover {
-            background-color: transparent;
-        }
-        .social-links a:nth-child(2):hover {
-            background-color: transparent;
-        }
-        .social-links a:nth-child(3):hover {
-            background-color: transparent;
-        }
-        .social-links a:nth-child(4):hover {
-            background: transparent;
-        }
-
         .cv-download {
             margin-top: 25px;
         }
@@ -813,7 +953,7 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: linear-gradient(45deg, var(--primary-color), var(--primary-light));
+            background: linear-gradient(45deg, var(--library-brown), var(--primary-light));
             color: white;
             padding: 12px 25px;
             border-radius: 30px;
@@ -821,7 +961,7 @@
             font-weight: 600;
             transition: var(--transition);
             border: none;
-            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+            box-shadow: 0 5px 15px rgba(93, 64, 55, 0.3);
             position: relative;
             overflow: hidden;
         }
@@ -843,7 +983,7 @@
 
         .cv-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(67, 97, 238, 0.4);
+            box-shadow: 0 8px 20px rgba(93, 64, 55, 0.4);
         }
 
         .cv-btn i {
@@ -856,7 +996,7 @@
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0,0,0,0.05);
+            border: 1px solid var(--library-light);
             position: relative;
             overflow: hidden;
         }
@@ -868,7 +1008,7 @@
             left: 0;
             width: 5px;
             height: 100%;
-            background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+            background: linear-gradient(to bottom, var(--library-brown), var(--primary-color));
             transition: var(--transition);
         }
 
@@ -885,13 +1025,13 @@
             display: block;
             margin-bottom: 10px;
             font-weight: 600;
-            color: var(--secondary-color);
+            color: var(--library-dark);
         }
 
         .form-control {
             width: 100%;
             padding: 15px;
-            border: 1px solid #ddd;
+            border: 1px solid var(--library-light);
             border-radius: 8px;
             font-size: 1rem;
             transition: var(--transition);
@@ -900,8 +1040,8 @@
 
         .form-control:focus {
             outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+            border-color: var(--library-brown);
+            box-shadow: 0 0 0 3px rgba(93, 64, 55, 0.2);
         }
 
         textarea.form-control {
@@ -910,7 +1050,7 @@
         }
 
         .submit-btn {
-            background: linear-gradient(45deg, var(--primary-color), var(--primary-light));
+            background: linear-gradient(45deg, var(--library-brown), var(--primary-light));
             color: white;
             border: none;
             padding: 15px 30px;
@@ -921,7 +1061,7 @@
             font-weight: 600;
             letter-spacing: 0.5px;
             text-transform: uppercase;
-            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+            box-shadow: 0 5px 15px rgba(93, 64, 55, 0.3);
             position: relative;
             overflow: hidden;
             display: flex;
@@ -931,9 +1071,9 @@
         }
 
         .submit-btn:hover {
-            background: linear-gradient(45deg, var(--primary-light), var(--primary-color));
+            background: linear-gradient(45deg, var(--primary-light), var(--library-brown));
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(67, 97, 238, 0.4);
+            box-shadow: 0 8px 20px rgba(93, 64, 55, 0.4);
         }
 
         .submit-btn:active {
@@ -987,7 +1127,7 @@
             right: 30px;
             width: 50px;
             height: 50px;
-            background: linear-gradient(45deg, var(--primary-color), var(--primary-light));
+            background: linear-gradient(45deg, var(--library-brown), var(--primary-light));
             color: white;
             border-radius: 50%;
             display: flex;
@@ -1028,7 +1168,7 @@
 
         .shape {
             position: absolute;
-            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            background: linear-gradient(45deg, var(--library-brown), var(--accent-color));
             opacity: 0.5;
             filter: blur(60px);
             border-radius: 50%;
@@ -1160,6 +1300,147 @@
             color: white;
         }
 
+        /* Library-themed decorative elements */
+        .bookmark {
+            position: absolute;
+            width: 40px;
+            height: 120px;
+            background: linear-gradient(to bottom, var(--library-brown), var(--library-dark));
+            right: 30px;
+            top: -20px;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+            z-index: 1;
+            opacity: 0.8;
+        }
+
+        .page-corner {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 50px 50px;
+            border-color: transparent transparent var(--library-light) transparent;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .page-corner::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 40px 40px;
+            border-color: transparent transparent var(--library-brown) transparent;
+            top: 0;
+            right: 0;
+        }
+
+        /* Logo styles */
+        .site-logo {
+            height: 80px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 3px 5px rgba(0,0,0,0.2));
+            transition: all 0.3s ease;
+        }
+
+        .site-logo:hover {
+            transform: scale(1.05) rotate(-5deg);
+            filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
+        }
+
+        /* Enhanced floating shapes */
+        .floating-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+            opacity: 0.15;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.7;
+            animation: float 15s ease-in-out infinite;
+        }
+
+        .shape:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            left: 10%;
+            background: linear-gradient(45deg, #4361ee, #f72585);
+            animation-duration: 25s;
+        }
+
+        .shape:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            top: 60%;
+            left: 80%;
+            background: linear-gradient(45deg, #3a0ca3, #4cc9f0);
+            animation-duration: 20s;
+            animation-delay: 2s;
+        }
+
+        .shape:nth-child(3) {
+            width: 250px;
+            height: 250px;
+            top: 80%;
+            left: 20%;
+            background: linear-gradient(45deg, #f72585, #4895ef);
+            animation-duration: 30s;
+            animation-delay: 4s;
+        }
+
+        .shape:nth-child(4) {
+            width: 150px;
+            height: 150px;
+            top: 30%;
+            left: 70%;
+            background: linear-gradient(45deg, #4cc9f0, #3a0ca3);
+            animation-duration: 22s;
+            animation-delay: 1s;
+        }
+
+        /* New keyframes for more dynamic movement */
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(10vw, 5vh) rotate(5deg); }
+            50% { transform: translate(5vw, 10vh) rotate(0deg); }
+            75% { transform: translate(-5vw, 7vh) rotate(-5deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+
+        /* Add a subtle paper texture overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/rice-paper.png');
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .decorative-element {
+            font-family: 'Times New Roman', serif;
+            color: var(--library-brown);
+            pointer-events: none;
+            user-select: none;
+            z-index: -1;
+            animation: float 40s linear infinite;
+        }
+        
         /* Responsive adjustments */
         @media (max-width: 1200px) {
             .container {
@@ -1190,11 +1471,11 @@
                 font-size: 1.3rem;
             }
 
-            .education-item {
+            .education-item, .experience-item {
                 flex-direction: column;
             }
 
-            .education-image {
+            .education-image, .experience-image {
                 width: 100%;
                 margin-top: 20px;
             }
@@ -1242,12 +1523,12 @@
                 min-width: 100%;
             }
 
-            .education-item {
+            .education-item, .experience-item {
                 flex-direction: column;
                 gap: 25px;
             }
             
-            .education-image {
+            .education-image, .experience-image {
                 width: 100%;
                 margin-top: 20px;
             }
@@ -1312,7 +1593,7 @@
                 font-size: 1.2rem;
             }
 
-            .education-degree {
+            .education-degree, .experience-title {
                 font-size: 1.1rem;
             }
         }
@@ -1348,6 +1629,9 @@
         <div class="shape"></div>
         <div class="shape"></div>
         <div class="shape"></div>
+        <!-- Add some decorative elements that match your logo's style -->
+        <div class="decorative-element" style="position: absolute; top: 20%; right: 10%; font-size: 5rem; opacity: 0.03; transform: rotate(15deg);">⟨N|KA⟩</div>
+        <div class="decorative-element" style="position: absolute; bottom: 15%; left: 5%; font-size: 8rem; opacity: 0.03; transform: rotate(-10deg);">⟨N|KA⟩</div>
     </div>
 
     <!-- Scroll to top button -->
@@ -1356,20 +1640,27 @@
     </div>
 
     <div class="container">
+        <!-- Decorative elements -->
+        <div class="bookmark"></div>
+        <div class="page-corner"></div>
+        
         <header>
             <div class="profile-img-container">
                 <img src="niranjan.jpeg" alt="Niranjan's Profile Picture" class="profile-img">
             </div>
             
             <div class="header-text">
-                <h1>I. NIRANJAN</h1>
-                <p class="tagline">Creative Web Developer & Designer</p>
-                <p>Passionate about building beautiful, functional websites that deliver exceptional user experiences. Combining technical skills with an eye for design to create digital solutions that make an impact.</p>
+                <div class="logo-container">
+                    <img src="logo.png" alt="N|KA Logo" class="site-logo">
+                </div>
+                <h1>I. NIRANJAN K.A</h1>
+                <p class="tagline">Library Assistant & Web Developer</p>
+                <p>Passionate about creating digital experiences while bringing organization and knowledge management skills from my library background. Combining technical web development skills with a librarian's attention to detail and information architecture.</p>
                 
                 <div class="contact-info">
                     <div class="contact-item tooltip">
                         <i class="fas fa-phone"></i>
-                        <span>63694 07214</span>
+                        <span>+91 63694 07214</span>
                         <span class="tooltiptext">Call me</span>
                     </div>
                     <div class="contact-item tooltip">
@@ -1401,8 +1692,61 @@
 
         <section id="objective">
             <h2><i class="fas fa-bullseye"></i>CAREER OBJECTIVE</h2>
-            <p>To work in a challenging IT environment where I can enhance my skills and support innovative solutions that drive business growth and technological advancement. Passionate about web development and eager to contribute to meaningful projects while continuously expanding my knowledge in emerging technologies.</p>
-            <p>I specialize in creating responsive, user-friendly websites with clean code and modern design principles. My goal is to combine technical expertise with creative problem-solving to deliver digital experiences that exceed expectations.</p>
+            <p>To leverage my combined experience in library science and web development to create organized, user-friendly digital experiences. Passionate about building websites that are as well-structured and accessible as a well-maintained library, while continuously expanding my technical skills in emerging web technologies.</p>
+            <p>As a Library Assistant at DDGDVC College, I've developed strong organizational, research, and information management skills that complement my technical web development abilities. I specialize in creating responsive, accessible websites with clean code and intuitive information architecture.</p>
+        </section>
+
+        <section id="experience">
+            <h2><i class="fas fa-briefcase"></i>PROFESSIONAL EXPERIENCE</h2>
+            
+            <div class="experience-container">
+                <!-- Library Assistant Experience -->
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <div class="experience-title">Library Assistant</div>
+                        <div class="experience-company"><i class="fas fa-university"></i> DDGDVC College, Chennai</div>
+                        <div class="experience-period"><i class="far fa-calendar-alt"></i> July 2025 - Present</div>
+                        <div class="experience-details">
+                            <p>Key responsibilities and achievements in my current role:</p>
+                            <ul>
+                                <li>Manage library cataloging systems and maintain accurate records of all library materials</li>
+                                <li>Assist students and faculty with research and information retrieval</li>
+                                <li>Organize and maintain the library's digital resources and online databases</li>
+                                <li>Develop and maintain the library's WordPress website with event calendars and resource listings</li>
+                                <li>Coordinate with faculty to develop subject-specific resource collections</li>
+                                <li>Train new library staff on information management systems and digital resources</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Library at DDGDVC College" class="experience-img">
+                    </div>
+                </div>
+                
+                <!-- Web Development Experience -->
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <div class="experience-title">Freelance Web Developer</div>
+                        <div class="experience-company"><i class="fas fa-laptop-code"></i> Self-Employed</div>
+                        <div class="experience-period"><i class="far fa-calendar-alt"></i> January 2024 - Present</div>
+                        <div class="experience-details">
+                            <p>Key projects and responsibilities:</p>
+                            <ul>
+                                <li>Develop and maintain websites for small businesses and educational institutions</li>
+                                <li>Specialize in WordPress development with custom themes and plugins</li>
+                                <li>Implement responsive design principles for optimal viewing on all devices</li>
+                                <li>Optimize websites for search engines (SEO) and performance</li>
+                                <li>Provide training to clients on content management system usage</li>
+                                <li>Collaborate with designers to implement UI/UX best practices</li>
+                                <li>Ensure websites comply with accessibility standards (WCAG)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Web Development Workspace" class="experience-img">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="skills">
@@ -1434,11 +1778,17 @@
                             <div class="skill-progress" style="width: 65%;"></div>
                         </div>
                     </div>
+                    <div class="skill">
+                        <div class="skill-name">Shopify <span>75%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="skill-category">
                     <h3><i class="fas fa-paint-brush"></i> Design & Media</h3>
                     <div class="skill">
-                        <div class="skill-name">Photoshop <span>75%</span></div>
+                        <div class="skill-name">Adobe Photoshop <span>75%</span></div>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 75%;"></div>
                         </div>
@@ -1461,9 +1811,21 @@
                             <div class="skill-progress" style="width: 70%;"></div>
                         </div>
                     </div>
+                    <div class="skill">
+                        <div class="skill-name">Photo Editing <span>75%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-file-alt"></i> Office & Tools</h3>
+                    <h3><i class="fas fa-book"></i> Library & Office</h3>
+                    <div class="skill">
+                        <div class="skill-name">Library Management Systems <span>50%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
                     <div class="skill">
                         <div class="skill-name">MS Word <span>95%</span></div>
                         <div class="skill-bar">
@@ -1471,9 +1833,9 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">MS Excel <span>85%</span></div>
+                        <div class="skill-name">MS Excel <span>70%</span></div>
                         <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
+                            <div class="skill-progress" style="width: 70%;"></div>
                         </div>
                     </div>
                     <div class="skill">
@@ -1483,9 +1845,9 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">Git Version Control <span>70%</span></div>
+                        <div class="skill-name">Research & Citation <span>85%</span></div>
                         <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
+                            <div class="skill-progress" style="width: 85%;"></div>
                         </div>
                     </div>
                 </div>
@@ -1495,7 +1857,7 @@
         <section id="project">
             <h2><i class="fas fa-project-diagram"></i>PROJECT SHOWCASE</h2>
             
-            <!-- New Cinema Project -->
+            <!-- Cinema Project -->
             <div class="project">
                 <div class="project-header">
                     <div>
@@ -1521,6 +1883,8 @@
                     <li>Created interactive features including search functionality, movie filtering, and user reviews</li>
                     <li>Optimized performance with lazy loading images and efficient API calls</li>
                     <li>Designed an intuitive user interface with smooth animations and transitions</li>
+                    <li>Implemented user authentication for saving favorites and writing reviews</li>
+                    <li>Ensured cross-browser compatibility and accessibility compliance</li>
                 </ul>
                 
                 <div class="project-links">
@@ -1540,7 +1904,7 @@
                         <div class="project-title">Real Estate Website <span class="project-badge badge-featured">FEATURED</span></div>
                         <div class="project-client">Client: <a href="https://srievaareestates.in" target="_blank" class="animated-underline">Srie Vaaree Estates</a></div>
                     </div>
-                    <span class="project-duration">Aug 2024 - Present</span>
+                    <span class="project-duration">August 2024 - Present</span>
                 </div>
                 
                 <div class="project-images">
@@ -1558,6 +1922,9 @@
                     <li>Integrating interactive maps and virtual tour features for enhanced property visualization</li>
                     <li>Creating a backend dashboard for property management and client inquiries</li>
                     <li>Optimizing site performance with caching, image optimization, and lazy loading techniques</li>
+                    <li>Implementing security measures including SSL encryption and regular backups</li>
+                    <li>Developing a lead capture system with automated email notifications</li>
+                    <li>Ensuring ADA compliance for accessibility standards</li>
                 </ul>
                 
                 <div class="project-links">
@@ -1574,7 +1941,7 @@
                         <div class="project-title">E-commerce Website</div>
                         <div class="project-client">Client: <a href="https://goodssify.store" target="_blank" class="animated-underline">Goodssify Store</a></div>
                     </div>
-                    <span class="project-duration">Jan 2025 – Present</span>
+                    <span class="project-duration">January 2025 – Present</span>
                 </div>
                 
                 <div class="project-images">
@@ -1593,6 +1960,8 @@
                     <li>Created a user-friendly checkout process with guest checkout option and multiple shipping methods</li>
                     <li>Developed a customer account dashboard for order tracking and wishlist functionality</li>
                     <li>Optimized the site for search engines with clean URLs, schema markup, and performance enhancements</li>
+                    <li>Implemented inventory management system with low stock alerts</li>
+                    <li>Added multilingual support for broader customer reach</li>
                 </ul>
                 
                 <div class="project-links">
@@ -1610,9 +1979,9 @@
                 <!-- College -->
                 <div class="education-item">
                     <div class="education-content">
-                        <div class="education-degree">B.Sc. Computer Science - Final Year</div>
+                        <div class="education-degree">B.Sc. Computer Science</div>
                         <div class="education-institution"><i class="fas fa-university"></i> D.A.G.A.C College, Chennai</div>
-                        <div class="education-year"><i class="far fa-calendar-alt"></i> 2022 - 2025 (Graduated)</div>
+                        <div class="education-year"><i class="far fa-calendar-alt"></i> 2022 - 2025</div>
                         <div class="education-details">
                             <p>Specialized in web development and database management with a focus on practical applications. Key achievements:</p>
                             <ul>
@@ -1620,6 +1989,7 @@
                                 <li>Completed advanced coursework in Data Structures and Algorithms</li>
                                 <li>Participated in college tech fest and coding competitions</li>
                                 <li>Maintained consistent academic performance with focus on practical skills</li>
+                                <li>Completed coursework in Database Management Systems, Web Technologies, and Software Engineering</li>
                             </ul>
                         </div>
                     </div>
@@ -1631,16 +2001,18 @@
                 <!-- Higher Secondary -->
                 <div class="education-item">
                     <div class="education-content">
-                        <div class="education-degree">Higher Secondary School</div>
+                        <div class="education-degree">Higher Secondary School (12th Grade)</div>
                         <div class="education-institution"><i class="fas fa-school"></i> SDA Higher Secondary School, Chennai</div>
                         <div class="education-year"><i class="far fa-calendar-alt"></i> 2020 - 2022</div>
                         <div class="education-details">
                             <p>Completed with Computer Science specialization with distinction. Key highlights:</p>
                             <ul>
-                                <li>Developed foundational programming skills in Python and C++</li>
+                                <li>Developed foundational programming skills in Python</li>
                                 <li>Participated in inter-school tech competitions and science exhibitions</li>
                                 <li>Completed coursework in Computer Fundamentals and Web Basics</li>
                                 <li>Developed simple applications as part of practical examinations</li>
+                                <li>Received academic excellence award for computer science</li>
+                                <li>Completed project on "Basic Website Development" using HTML and CSS</li>
                             </ul>
                         </div>
                     </div>
@@ -1652,7 +2024,7 @@
                 <!-- Secondary School -->
                 <div class="education-item">
                     <div class="education-content">
-                        <div class="education-degree">Secondary School</div>
+                        <div class="education-degree">Secondary School (10th Grade)</div>
                         <div class="education-institution"><i class="fas fa-school"></i> SDA Higher Secondary School, Chennai</div>
                         <div class="education-year"><i class="far fa-calendar-alt"></i> 2019 - 2020</div>
                         <div class="education-details">
@@ -1662,6 +2034,7 @@
                                 <li>Participated in computer applications and science exhibitions</li>
                                 <li>Developed interest in technology and problem-solving</li>
                                 <li>Recognized for academic excellence and participation in extracurricular activities</li>
+                                <li>Participated in school's computer club activities</li>
                             </ul>
                         </div>
                     </div>
@@ -1674,6 +2047,8 @@
 
         <section id="contact">
             <h2><i class="fas fa-envelope"></i>GET IN TOUCH</h2>
+            <p>I'm currently looking for new opportunities in web development . Whether you have a question about my work, want to discuss a project, or just want to say hello, I'll do my best to get back to you!</p>
+            
             <div class="contact-form">
                 <form action="https://formspree.io/f/xbloqpdr" method="POST" id="portfolioContactForm">
                     <input type="hidden" name="_subject" value="New message from your portfolio">
@@ -1709,7 +2084,7 @@
         </section>
 
         <footer>
-            <p>&copy; 2024 Niranjan. All rights reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent-color);"></i> by Niranjan</p>
+            <p>&copy; 2024 Niranjan K.A. All rights reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent-color);"></i> by Niranjan</p>
             <p style="margin-top: 10px; font-size: 0.85rem;">Made with HTML, CSS, and JavaScript</p>
         </footer>
     </div>
@@ -1837,10 +2212,11 @@
             // Typewriter effect for tagline
             const tagline = document.querySelector('.tagline');
             const phrases = [
-                "Creative Web Developer & Designer",
+                "Library Assistant & Web Developer",
                 "WordPress Specialist",
+                "Information Organization Expert",
                 "UI/UX Enthusiast",
-                "Problem Solver"
+                "Digital Solutions Creator"
             ];
             let currentPhrase = 0;
             let currentChar = 0;
